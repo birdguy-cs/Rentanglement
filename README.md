@@ -1,18 +1,17 @@
-# DEVELOPMENT HAS PAUSED! Hey! I loved working on this mod and I want to continue but there are so many issues with it I will need a while to go through it and fix all the issues. Plus I have many real life and personal video projects that need my full attention Ill be pausing developemt for the foreseeable future. I will come back. Eventually! Have a good one :)
- # Entanglement: Redux 🔗
+ # Rentanglement 🔗
 ![Status](https://img.shields.io/badge/Status-Work_In_Progress_(WIP)-orange.svg)
 ![Game](https://img.shields.io/badge/Game-BONEWORKS-blue)
 
-**Entanglement: Redux** is an open-source revival and complete overhaul of the classic *BONEWORKS* multiplayer mod. 
+**Rentanglement** is an open-source revival and complete overhaul of the classic *BONEWORKS* multiplayer mod. 
 
-With the deprecation of the Discord Game SDK, the original Entanglement mod was left without a functioning networking backend. Entanglement *Redux* brings the mod back to life by migrating the entire networking architecture to **Steamworks.NET**, while completely rewriting the physics sync to match modern VR multiplayer standards.
+With the deprecation of the Discord Game SDK, the original Entanglement mod was left without a functioning networking backend. Rentanglement brings the mod back to life by migrating the entire networking architecture to **Steamworks.NET**, while completely rewriting the physics sync to match modern VR multiplayer standards.
 
 ### ⚠️ Status: Work In Progress (WIP)
 This project is currently in **active development**. While the core Steamworks migration and physics overhauls are implemented, you will encounter bugs, desyncs, and missing features. It is not yet ready for a full public release, but developers and testers are welcome to test and suggest improvements! :)
 
 ---
 
-## ✨ Entanglement: Redux - Features
+## ✨ Rentanglement - Features
 
 ### 🌐 1. Native Steamworks Integration
 We have completely excised the deprecated Discord Game SDK, rebuilding the mod's entire networking foundation to utilize native Steam Matchmaking and P2P Networking. 
@@ -21,7 +20,7 @@ We have completely excised the deprecated Discord Game SDK, rebuilding the mod's
 * **Native Voice Chat:** Integrated Steam VoIP entirely replaces the legacy Discord audio buffer system, delivering low-latency, high-fidelity proximity chat.
 
 ### ↕️ 2. Updated & Improved Physics Syncing
-The original Entanglement suffered from severe object jitter caused by forced physical teleportation. *Entanglement: Redux* fundamentally changes how physical objects synchronize across the network to provide a buttery-smooth multiplayer experience:
+The original Entanglement suffered from severe object jitter caused by forced physical teleportation. *Rentanglement* fundamentally changes how physical objects synchronize across the network to provide a buttery-smooth multiplayer experience:
 * **Velocity Extrapolation:** Instead of simply broadcasting raw positions, networked objects now synchronize their `velocity` and `angularVelocity`, allowing clients to accurately predict movement between network ticks.
 * **PD Controllers:** Physical items now smoothly travel to their target destinations using a finely tuned Proportional-Derivative (PD) joint controller. This respects the Boneworks physics engine rather than fighting it.
 * **Sleep States:** To dramatically reduce network bandwidth overhead, the engine now actively monitors Rigidbody sleep states, intelligently halting packet transmission the moment an object comes to a rest.
@@ -52,7 +51,7 @@ Or use Thunderstore! (_I update Nexus first_)
 
 ## 🤝 Contributing
 
-**We want your help!** Entanglement: Redux is a massive undertaking, and we are looking for developers, modders, and VR enthusiasts to help us get this to a polished 1.0 release state.
+**We want your help!** Rentanglement is a massive undertaking, and we are looking for developers, modders, and VR enthusiasts to help us get this to a polished 1.0 release state.
 
 How you can contribute:
 * **Find Bugs!:** Have fun with friends and then report any issues in the Issues tab!
